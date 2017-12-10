@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+    body{ margin:0;padding:0; font-family:"微软雅黑";color:#666;font-size:14px;}
+	img{ display:block; border:none;}
+	a{ text-decoration:none;}
+	input{ margin:0; padding:0; border:none; outline:none;}
+	p,td,dd,textarea{ margin:0; padding:0; }  
+	ul,li,h1,h2,h3,h4,h5{ margin:0; padding:0; list-style:none; line-height:none;}
+	button{border:none; padding:0; background:none; cursor:pointer;}
+	
+	 header{ width:1200px;height:80px;margin:0 auto;}
+	 header img{width:173px; height:40px; padding:20px 0 0;}
+	.bannerbox{ background:url(images/bg.png) center center; height:600px;}
+	.white_frame{ width:350px; height:404px; background-color:white; float:right; margin:90px 10% 0 0;}
+	.white_frame p{padding:40px 0 28px 26px; font-size:16px; color:#333;}
+	.userbox,.passwordbox{ width:298px; height:40px; border:1px #cbcbcb solid; margin:0 0 25px 26px;}
+	.userbox img,.passwordbox img{ float:left;}
+	.userbox input,.passwordbox input{width:240px;line-height:40px;color:#333;font-size:14px;padding:0 0 0 10px;}
+	.sign_up{ width:300px; margin-left:26px;}
+	.sign_up a{color:#666;}
+	 button{ width:300px; height:42px; margin:20px 0 0 26px;}
+	
+	footer{ width:600px; margin:50px auto 0;}
+	footer a{ color:#333;}
+	footer a:hover{color:#00ad3b;}
+	footer p{ margin-top:20px;}
+
+
+    /*导航小于1024的时候 用下边的样式*/
+	@media screen and (max-width:1024px){
+     
+	 .bannerbox{width:1024px;}
+
+	}
+
+
+
+

@@ -1,0 +1,88 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.b_us{background:url(images/b_us.jpg) no-repeat;}
+
+.listbox{ width:1200px; margin:0 auto;clear:both;}
+.list_title{height:50px;line-height:50px;width:1200px;background:#f5f5f5;border-left:7px solid #008fff;}
+
+.bi_p{background:url(images/b_us.jpg) no-repeat;}
+
+/*产品种类*/
+.pc_p{background:url(images/b_us.jpg) no-repeat;}
+.list_title .t_cp{float:left;}
+.list_title .t_cp a{font-size:16px;font-weight:600;color:#008fff;text-decoration:none;padding-left:10px;}
+.list_title .t_cp .c_a2{color:#666;font-size:16px;padding-left:0;}
+
+.t_seach{float:right;border:1px #d5d5d5 solid;margin:10px;}
+.t_seach input{float:left; height:30px; line-height:30px;padding:0 7px;}
+.t_seach .s_s2{padding:0 7px;background: #41a1ec;color: #fff;}
+
+.list_picbox{ width:1220px; margin-top:40px; overflow:hidden;}
+.list_pic{ float:left; width:224px; margin-right:20px; margin-bottom:20px;position:relative;}
+.l_yy{background:rgba(0,0,0,0.8); position:absolute;top:0;left:0;height:340px;width:100%; display:none;}
+.l_yy a{text-align:center;display:block;color:#fff;width:110px;height:35px;line-height:35px;border-radius:2px;background-color:#03a9f4;margin:50px auto; text-decoration:none;}
+.l_yy a:hover{background:#0db714;}
+.list_pic:hover .l_yy{ display:block;}
+
+.list_countent tr{height:30px;}
+.list_countent td{font-size: 12px;color:#fff; padding:20px 0 0 30px; }
+.list_countent th{padding:30px 0 0 15px ;}
+.startext{float:left;}
+.staricon img{float:left; margin-top:3px; margin-right:5px;}
+.lbtext{float:left; line-height:30px;}
+.list_conpox{float:left;}
+.lbbox{float:left; margin-left:10px; overflow:hidden;}
+.icon_1,.icon_2,.icon_3,.icon_4{ width:20px; height:20px; margin:5px auto; }
+.lbtype{ font-size:10px;color:#fff;width:36px; text-align:center; height:14px; word-break:break-all;font-weight:normal; }
+
+/*案例详情*/
+.bc_p{background:url(images/b_us.jpg) no-repeat;}
+.listbox .l_al{line-height:50px;width:1200px;background:#f7f7f7;margin-bottom:40px;}
+.listbox .l_al a{color:#666;text-decoration:none;font-size:16px;}
+.listbox .l_al .al_a{color:#008fff;padding-left:10px;font-size:16px;font-weight:600;}
+.listbox .l_albox{background:#fdfdfd;}
+.listbox .l_albox .al_list{width:390px;float:left;margin:5px 5px 25px;text-align:center;border:1px solid #e2e2e2;padding:9px;}
+.listbox .l_albox .al_list:hover{border:1px solid #a5a5a5;}
+.listbox .l_albox .al_list h4{font-size:16px;color:#222;font-weight:600;line-height:30px;}
+.listbox .l_albox .al_list p{color:#888;line-height:30px;}
+.listbox .l_albox .al_list a{display:inline-block;margin:20px;padding:10px 37px;background:#1f9cff;color:#fff;text-decoration:none;border-radius:3px;}
+.listbox .l_albox .al_list a:hover{background:#1fb125;}
+
+.suc{width:100%;background:#f9f9f9;margin-top:45px;}
+.suc .s_list{ width:1100px;margin:0 auto;height:230px;padding:20px;}
+.suc .l1 img{float:left;margin:15px 0 0 30px;}
+.suc .l2 img{float:right;margin:30px 30px 0 0;}
+.suc .s_list h4{color:#222;font-size:30px;padding:25px 290px;}
+.suc .s_list p{color:#666;font-size:14px;padding:0 150px 0 290px;line-height:27px;}
+.suc .l2 h4{padding:25px 0 0 60px;}
+.suc .l2 p{padding:25px 0 0 60px;}
+
+/*联系我们*/
+#map{width:1200px;height:350px;clear:both;margin:0 auto 65px;}
+
+.usbox1{width:1200px;margin:0 auto;overflow:hidden;}
+.usbox1 img{float:left;}
+.usbox1 p{color:#555;padding:0 35px;margin-left:460px;line-height:27px;}
+.usbox1 .u_p1{color:#222;font-size:23px;padding:5px 35px;}
+.usbox1 .u_p2{margin-top:20px;}
+.usbox1 p span{color:#0fc716;font-size:19px;}
+
+.contact{width:100%;background:#f9f9f9;margin-top:70px;}
+.contact .c_mid{width:1200px;margin:0 auto;padding:100px 0;}
+.smbox{ width:520px;float:left;margin-right:40px;margin-left:60px;border-right:1px solid #d6d6d6;}
+.smbox img{float:left;}
+.smbox h4{color:#222;font-size:30px;padding:20px 0;margin-left:180px;}
+.smbox p{color:#555;font-size:16px;line-height:30px;margin-left:180px;padding-right:55px;}
+
+.contactbox{ width:520px; float:left;}
+.contact2{float:left;padding-left:30px}
+.contact1{margin-left:220px;}
+.contact1 p{font-size:16px;color:#222; line-height:30px;margin:17px 0;}
+.contact1 p img{float:left;}
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+html, body,div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td ,p{background: transparent;border: 0;margin: 0;padding: 0;vertical-align: baseline;}
+ol, ul {list-style: none; }
+/*-------------------------------------------------------------- */
+#wrapper {width: 100%;  margin: 0 auto; }
+/*Header-------------------------------------------------------------- */
+  header {width: 100%;height: 60px;overflow: hidden;position: fixed; top: 0;left: 0;z-index: 999;background-color:#00a81c;}
+  header #logo {margin-top:15px;display: inline-block;height: 30px;float: left; margin-right:120px;}
+  header nav {display: inline-blockmargin-left:140px; }
+  header nav a { line-height: 60px; margin-left:20px;color:#EEFFF8;font-size: 16px;font-family:"微软雅黑";}
+  header nav a:hover { color: white;  text-decoration: none;}
+  header.smaller { height: 60px; }
+  header.smaller #logo {width: 130px;height: 30px; }
+  header.smaller nav a {line-height: 60px; }
+/*-------------------------------------------------------------- */
+  .clearfix:after {visibility:hidden; display:block; content:""; clear:both; height: 0; }
+/*-------------------------------------------------------------- */
+  .footerbox{width:100%; height:275px; background:url(images/footerbg.png); background-repeat:repeat; float:left;}
+  .container2{ width:1200px; margin-left:auto; margin-right:auto; margin-top:40px;}
+  .navbox{ float:left;}
+  .navbox a{ text-decoration:none; color:white;}
+  .navbox a:hover{ text-decoration:underline; color:white;}
+  .navbox p{color:white;  margin:2px 0; font-family:"微软雅黑";}
+  .textbox{float:left; margin-left:150px;}
+  .textbox p{ color:white; margin:2px 0; font-family:"微软雅黑";}
+  .erweimabox{ width:130px; overflow:hidden; position:relative; left:200px; }
+  .erweimabox img{width:90px; height:90px; margin-left:20px; margin-top:4px;}
+  .erweimabox p{ color:white; font-family:"微软雅黑";}
+  .whiteline{ width:1400px; height:1px; background-color:white; margin-top:40px; margin-left:auto; margin-right:auto; clear:both;}
+  .copyright{ text-align:center; color:#e3e3e3; margin:20px 0; font-family:"微软雅黑";}
+  .copyright a{color:#e3e3e3; font-family:"微软雅黑";}
+  .copyright a:hover{ color:#ca4341;}

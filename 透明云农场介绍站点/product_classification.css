@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+.listbox{ width:1200px; overflow:hidden; margin-left:auto; margin-right:auto;margin-top:60px; margin-bottom:100px;}
+.list_title{ font-size:22px; font-family:"微软雅黑"; color:#323232;}
+.list_picbox{ width:1220px; margin-top:40px; overflow:hidden;}
+.list_pic{ float:left; width:224px; margin-right:20px; margin-bottom:20px;}
+.list_pic a{ color:black;}
+.list_countent{ background-color:#fafafa; border-collapse:collapse;  }
+.list_countent th{ text-align:left; font-size:12px; font-family:"微软雅黑"; color:#3a3a3a; font-weight:normal; padding-left:2px;}
+.list_countent td{font-size: 12px; font-family:"微软雅黑";color:#3a3a3a; padding-left:2px; }
+.startext{ float:left;}
+.staricon img{ float:left; margin-top:3px; margin-right:2px;}
+.lbtext{ float:left; line-height:30px;}
+.list_conpox{ float:left;}
+.lbbox{float:left; margin-left:10px; overflow:hidden;}
+.icon_1,.icon_2,.icon_3,.icon_4{ width:20px; height:20px; margin:auto; }
+.lbtype{ font-size:10px; font-family:"微软雅黑";color:#3a3a3a;width:24px; text-align:center; height:14px; word-break:break-all;
+         font-weight:normal; }
+
+/*企业案例详情*/
+.jidititle{ width:1200px; height:200px; margin:0 auto; background:#f4f4f4; margin-top:40px;}
+.jiditext1{ width:400px; height:400px; float:left; background:#2ee5be}
+.jiditext1 p{ width:230px; color:white; font-size:16px; font-family:"微软雅黑"; margin:auto; margin-top:160px; 
+              line-height:24px;}
+.jiditext2{ width:400px; height:400px; float:right; background:#2ea8e5}
+.jiditext2 p{ width:230px; color:white; font-size:16px; font-family:"微软雅黑"; margin:auto; margin-top:160px; 
+              line-height:24px;}
+.jidiresultbox{ width:1200px; height:200px; background:#f1f1f1; margin-top:60px;}
+
+
+
+

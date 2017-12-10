@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+.timg{background:url(images/r_01.jpg) no-repeat center;height:350px;}
+.t_rz{background:url(images/rz_01.jpg) no-repeat center;height:350px;}
+.epbox{width:1000px; height:475px; margin:80px auto 0;}
+.epbox h1{ font-size:30px; color:454545;}
+.epbox p{font-size:15px;font-weight:600;line-height:30px;}
+.epbox p a{color:#00ad3b;font-weight:600;}
+
+

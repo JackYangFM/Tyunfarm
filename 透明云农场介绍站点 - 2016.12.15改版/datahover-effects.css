@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+.image-box{width:300px;height:300px;}
+.boxfloat1{float:left;width:300px;margin:0 25px 50px;}
+
+.text-desc h3{font-size:16px; margin:135px 0; color:#fff;}
+.text-desc{position:absolute; left:0; top:0; background-color:#000; height:300px; width:300px;}
+
+/*start effect-1*/
+.port-1{float:left; width:100%; position:relative; overflow:hidden; text-align:center;}
+.port-1 .text-desc{top:-100%; transition:0.4s;background:rgba(0, 173, 59, 0.85);}
+.port-1 img{transition: 0.4s;}
+/*.port-1:hover img{transform: scale(1.1);}*/
+.port-1.effect-1:hover .text-desc{top: 0;}
+.port-1.effect-2 .text-desc{top:auto; bottom:-100%;}
+.port-1.effect-2:hover .text-desc{bottom: 0;}
+.port-1.effect-3 .text-desc{top: 50%; left: 50%; width:0; height: 0; overflow:hidden; padding:0;}
+.port-1.effect-3:hover .text-desc{ width:300px; height:300px; top: 0; left: 0;}
+/*effect-1 end */

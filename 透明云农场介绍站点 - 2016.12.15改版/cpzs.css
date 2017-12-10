@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+.t_z{background:url(images/z_01.jpg) no-repeat center;height:350px;}
+
+.cpzsbox .c_seach{border:2px solid #00ad3b;margin:12px;width:1000px;height:50px;margin:80px auto;}
+.cpzsbox .c_seach input{background-color:transparent;line-height:50px;height:50px;}
+.cpzsbox .c_seach .s_s1{width:930px;float:left;padding:0 0 0 10px;font-size:16px;font-weight:600;}
+.cpzsbox .c_seach .s_s2{background:url(images/search.png) no-repeat 5px 12px;width:41px;height:50px; cursor:pointer;}
+
+.cpzsbox .c_title{width:1200px;margin:100px auto 30px;}
+.cpzsbox .c_title h2{text-align:center;font-size:28px;font-weight:600;}
+.cpzsbox .c_title h2 span{color:#00ad3b;}
+
+.cpzsbox .c_list{width:1200px; margin:0 auto;position:relative;}
+.cpzsbox .c_list ul li{width:400px;height:490px;float:left;background:#f3f3f3;}
+.cpzsbox .c_list ul li .l_mb{width:400px;height:300px;background:rgba(0, 0, 0, 0.15);position:absolute;top:0;}
+.cpzsbox .c_list ul li:hover .l_mb{display:none;transition:0.5s;}
+.cpzsbox .c_list ul li:hover{background:#00ad3b;color:#fff;transition:0.5s;}
+.cpzsbox .c_list ul li img{width:400px;height:300px;}
+.cpzsbox .c_list ul li h2{padding:10px 20px;font-size:16px;}
+.cpzsbox .c_list ul li p{font-size:14px;padding:0 20px;line-height:30px;}
+
+
+
+
+
+
+
+
+
+
+		   

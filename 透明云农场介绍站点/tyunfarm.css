@@ -1,0 +1,32 @@
+
+/*= Reset CSS 
+============= */
+html, body {border: 0; margin: 0; padding: 0;}
+.onetwoo{ width:1200px; margin:0 auto 100px auto;}
+.htmleaf-container{ width:100%;}
+.container1{ margin-top:80px;}
+.image-box img{ vertical-align: middle; display:block;}
+.full-length{width: 100%; }
+
+.boxfloat1{ margin-top:80px;}
+
+.text-desc h3,.text-descright h3{font-size:16px; color:white; font-family:"微软雅黑"; padding:0 20px; 
+                                 line-height:24px; text-align:justify;}
+.text-desc{position:absolute; left:0; top:0; background-color:#323232; height:253px; width:253px;}
+.text-descright{position: absolute; right:0; top:0; background-color:rgba(0,0,0,0.7); height:253px; width:253px;}
+/*= Reset CSS End
+================= *
+
+/* effect-1 css */
+.port-1{ width: 100%; position: relative; overflow: hidden; text-align: center;}
+.port-1 .text-desc{background-color:rgba(0,0,0,0.7); top:-100%; transition:0.3s;}
+/*.port-1 img{transition: 0.5s;}
+.port-1:hover img{transform: scale(1.2);}*/
+.port-1.effect-1:hover .text-desc{top: 0;}
+
+.port-1.effect-2 .text-descright{ background-color:rgba(0,0,0,0.7); right:-100%; transition:0.3s;}
+.port-1.effect-2:hover .text-descright{right:0;}
+
+.port-1.effect-3 .text-desc{top:auto; bottom:-100%;}
+.port-1.effect-3:hover .text-desc{bottom:0;}
+/* effect-1 css end */

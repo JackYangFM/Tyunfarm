@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+.timg{width:1400px; height:300px; margin:100px  auto 0 auto;}
+
+.pmbox{ width:1200px; margin:40px auto 0 auto;}
+
+.xuxian{ width:1200px; margin:30px auto 40px auto;}
+.list_title,.list_title2{ width:1200px; margin:auto auto; }
+.sensor{ width:1200px; height:1px; margin:40px auto 0 auto;}
+.sensor2{ width:572px; height:2px; margin:40px auto 0 auto;}
+.list_title p{font-size:22px; font-family:"微软雅黑"; color:#008e18; padding-left:490px; margin-top:-8px;}
+.list_title2 p{font-size:22px; font-family:"微软雅黑"; color:#008e18; padding-left:534px; margin-top:-8px;}
+.sensor_t{ width:1100px; margin:auto; font-size:20px; font-family:"微软雅黑"; color:#8c8c8c;}
+
+.yjbox,.gapbox{ width:1200px; overflow:hidden;}
+.gapbox img{ float:right;}
+.yjbox p{font-size:18px; font-family:"微软雅黑"; color:black; width:620px; overflow:hidden; float:right; line-height:34px; margin:60px 60px 0 0;}
+.yjbox p span,.gapbox p span{ font-size:40px; font-family:"arial"; color:#008e18; margin-top:5px;}
+.gapbox p{font-size:18px; font-family:"微软雅黑"; color:black; width:550px; overflow:hidden; line-height:34px; margin:40px 0 0 60px;}
+.cboximg{ width:1222px; height:322px; margin:40px auto 0 auto;}
+.cbox{font-size:20px; font-family:"微软雅黑"; color:#4b4b4b; padding:20px 0 0 0; text-align:center;}
+.warningbox{ width:1200px; overflow:hidden; margin:40px auto 100px auto;}
+.warningbox img{width:542px; height:469px; margin-left:60px;}
+.warningt{ float:right; overflow:hidden; padding:150px 160px 0 0;}
+.warningt p{  color:#ff3600; font-size:30px; font-family:"微软雅黑";}
+		   

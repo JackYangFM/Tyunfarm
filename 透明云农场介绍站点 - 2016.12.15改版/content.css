@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+/**/
+*{margin:0;padding:0;}
+.timg{background:url(images/t_01.jpg) no-repeat center;height:350px;}
+
+.content{width:1100px;margin:70px auto 0;}
+.content ul li{height:300px;border:1px solid #dcdcdc;margin:50px auto 0;background:#f5f5f5;}	
+.content ul li:hover{border:1px solid #09ad00;}
+.content ul li a{display:block;width:300px;height:298px;float:left;}
+.content ul li .c_intro{width:710px;margin:30px 40px;float:right;}
+.content ul li .c_intro p span{color:#09ad00;}
+.content ul li .c_intro h2{color:#09ad00;font-weight:600;font-size:23px;}
+.content ul li p{line-height:27px;font-weight:600;font-size:14px;padding:20px 0;}
+/**/
+
+
+		   
+
+
+
+
+
+
+	   

@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* not important */
+body,p{ margin:0;}
+.thumbnailWrapper {
+	width:1200px;
+	margin:0px auto;
+} /* not important */
+.thumbnailWrapper ul {
+	list-style-type: none; /* remove the default style for list items (the circles) */
+	margin:0px; /* remove default margin */
+	padding:0px; /* remove default padding */
+}
+.thumbnailWrapper ul li {
+	float:left; /* important: left float */
+	position:relative; /* so we can use top and left positioning */
+	overflow:hidden; /* hide the content outside the boundaries (ZOOM) */
+	margin:10px 20px;
+}
+.thumbnailWrapper ul li a img {
+	width:200px; /* not important, the pics we use here are too big */
+	position:relative; /* so we can use top and left positioning */
+	border:none; /* remove the default blue border */
+}
+.caption {
+	position:absolute; /* needed for positioning */
+	bottom:0px; /* bottom of the list item (container) */
+	left:0px; /* start from left of the list item (container) */
+	width:100%; /* stretch to the whole width of container */
+	display:none; /* hide by default */
+	background:rgba(0,0,0,0.5);
+	}
+.caption .captionInside {color:white; font-size:16px; line-height:35px;text-align:center;}
+.o_bgbox{width:100%; background-color:#f9f9f9;padding:10px 0 50px 0;}
+.o_title{ font-size:16px;font-weight:600;color:#222;line-height:50px;}
+.o_title span{color:#008eff;line-height:50px;font-size:17px;padding-left:15px;}
+

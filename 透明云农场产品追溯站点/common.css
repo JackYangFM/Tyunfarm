@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+body{ margin:0; overflow-x:hidden; line-height:normal;}
+img{ display:block; border:none;}
+a{ text-decoration:none;}
+input{ margin:0; padding:0; border:none; outline:none;}
+p,td,dd,textarea{ margin:0; padding:0; }  
+ul,li,h1,h2,h3,h4,h5{ margin:0; padding:0; list-style:none; line-height:none;}
+input{ margin:0; padding:0; border:none; outline:none;}
+
+.clear{clear:both;}
+  
+.header{background:url(images/banner.jpg) no-repeat 0 0;height:450px;width:100%;float:left;margin-bottom:100px;}
+.header .top_nav{width:1200px;height:60px;background:rgba(0,0,0,0.6);margin:0 auto; margin-top:10px;}
+.header .top_nav ul{float:left;}
+.header .top_nav ul li{float:left;}
+.header .top_nav ul li a{color:#fff;padding:0 20px;line-height:60px;text-decoration:none;text-align:center;}
+.header .top_nav ul li .n_a1{color:#ffe500;}
+.header .top_nav ul li a:hover{color:#ffe500;}
+
+.header .top_seach{float:right;border:1px solid #a9a9a9;margin:12px;}
+.header .top_seach:hover{border:1px solid #fff;}
+.header .top_seach input{background-color:transparent;color:#fff;padding:7px 5px;}
+.header .top_seach .s_s1{width:200px;}
+.header .top_seach .s_s2{background:url(images/search.png) no-repeat 7px -1px;width:41px;height:25px;}
+
+.header .h_banner{background:url(images/p_zl.png) no-repeat;width:467px;height:184px;margin:100px auto 0;}
+.header .hb1{background:url(images/p_bz1.png) no-repeat;}
+.header .hb2{background:url(images/p_al.png) no-repeat;}
+.header .hb3{background:url(images/p_us.png) no-repeat;}
+.header .hb4{background:url(images/p_da.png) no-repeat;}
+.header .hb5{background:url(images/p_qy.png) no-repeat;}
+.header .hb6{background:url(images/p_cg.png) no-repeat;}
+
+
+.footerbox{width:100%; height:260px; background:#202327; float:left;margin-top:100px; }
+.footerbox .container{ width:1200px; margin-left:auto; margin-right:auto; margin-top:40px; }
+.footerbox .container .navbox{ float:left;}
+.footerbox .container .navbox a{ text-decoration:none;}
+.footerbox .container .navbox p{color:white;  margin:2px 0;}
+.footerbox .container .textbox{float:left; margin-left:150px;}
+.footerbox .container .textbox p{ color:white; margin:2px 0;}
+.footerbox .container .erweimabox{ width:130px; overflow:hidden; float:left; margin-left:200px; }
+.footerbox .container .erweimabox img{width:90px; height:90px; margin-left:auto; margin-right:auto; margin-top:4px;}
+.footerbox .container .erweimabox p{text-align:center;color:white;}
+.footerbox .container .f_logo{width:110px;height:110px;float:left;margin:4px 0 0 30px;background:#535b67;border-radius:2px;}
+.footerbox .container .f_logo img{margin:9px auto;}
+
+.footerbox .whiteline{ width:1400px; height:1px; background-color:white; margin-top:40px; margin-left:auto; margin-right:auto;}
+.footerbox .copyright{ text-align:center; color:#e3e3e3; margin-top:20px;}
+.footerbox .copyright a{color:#e3e3e3;}
+  
+

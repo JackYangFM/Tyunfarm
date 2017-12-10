@@ -1,0 +1,30 @@
+
+/*= Reset CSS 
+============= */
+html, body {border: 0; margin: 0; padding: 0; line-height:normal;}
+.container1{ margin-top:40px;}
+.image-box img{max-width:300px; vertical-align: middle; display:block;}
+
+.boxfloat1{float: left; width:300px; margin:0 50px 50px 50px;}
+
+.text-desc h3{font-size: 20px; margin: 100px 0 20px; color:white;}
+.btn{display: inline-block; padding: 5px 10px; font-size: 14px; color:white; border: 2px solid #07ad41; background-color: #07ad41; text-decoration: none; transition: 0.3s;}
+.btn:hover{background-color:white;transition: 0.3s;}
+.text-desc{position: absolute; left: 0; top: 0; background-color:#000; height:300px; width:300px;}
+/*= Reset CSS End
+================= *
+
+/* effect-1 css */
+.port-1{float: left; width: 100%; position: relative; overflow: hidden; text-align: center;}
+.port-1 .text-desc{opacity: 0.8; top: -100%; transition: 0.3s; color: #000; padding: 45px 20px 20px;}
+.port-1 img{transition: 0.3s;}
+.port-1:hover img{transform: scale(1.2);}
+
+.port-1.effect-1:hover .text-desc{top: 0;}
+
+.port-1.effect-2 .text-desc{top: auto; bottom: -100%;}
+.port-1.effect-2:hover .text-desc{bottom: 0;}
+
+.port-1.effect-3 .text-desc{top: 50%; left: 50%; width: 0; height: 0; overflow: hidden; padding: 0;}
+.port-1.effect-3:hover .text-desc{ width:300px; height:300px; top: 0; left: 0; padding: 45px 20px 20px;}
+/* effect-1 css end */

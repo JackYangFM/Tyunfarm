@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>透明农场分布图</title>
+<script src="js/lib/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/lib/raphael-min.js"></script>
+<script type="text/javascript" src="js/res/chinaMapConfig.js"></script>
+<script type="text/javascript" src="js/map-min.js"></script>
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<style>
+	*{margin:0;padding:0;border: none;}
+	body { color: #333; text-align: center; font: 12px "微软雅黑";background-color: #dcf5ed; }
+	.mapTipText{width: 290px;height: 120px;background-color: #ffffff;}
+	.mapTipText .mapTipImg{height: 66px; width: 66px; float: left;border: 2px solid #ffffff; border-radius: 50%;overflow: hidden;margin: -12px 5px 0 -12px;}
+	.mapTipText .mapTipImg img{width: 100%;height: 100%;}
+	.mapTipText .mapTipList{float: left;margin-left: 4px;}
+	.mapTipText .mapTipList h2{text-align: left; padding-top:0px; margin-top:0px;}
+	.mapTipText .mapTipList h2 a{font-size: 24px; color: #262626;text-decoration:none;}
+	.mapTipText .mapTipList h2 a:hover{ color: #0085d2;}
+	.mapTipText .mapTipList h2 a span{font-size: 16px;margin-left: 3px;}
+	.mapTipText .mapTipList ul{ width: 213px;padding-right: 10px;}
+	.mapTipText .mapTipList ul li{list-style: none;float: left;padding: 7px 3px 0 3px;}
+	.mapTipText .mapTipList ul li a{color: #262626;text-decoration:none;}
+	.mapTipText .mapTipList ul li a:hover{background-color:#2ebcfe;color:#ffffff;}
+	.mapTipText .mapTipList .right{ float:right;font-weight:bold; color:#F00; font-size:14px;}
+	.mapTipText .mapTipList .right a{ float:right;font-weight:bold; color:#E54724; font-size:14px;}
+	.btn-success a:hover {background:#F00; color:#000;}
+</style>
+<script type="text/javascript">
+	$(function(){
+		$('#ChinaMap').SVGMap({
+			mapWidth: 1600,
+			mapHeight: 800
+		});
+	});
+</script>
+</head>
+<body>
+<div class="wrap" style="margin-top:20px;">
+<h1>透明云农场基地分布</h1>
+<div class="itemCon" style="float: left">
+	<div id="ChinaMap" style="margin:20px 150px;"></div>
+	<div id="stateTip" style="position: absolute;left: 100%;text-align: left;display: inline;"></div>
+</div>
+
+<div id="mapTipContent" style="width:900px;margin: 0 auto;display: none;">
+	<div class="mapTipText mapTipText0">
+		<div class="mapTipImg"><img src="images/heilongjiang.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">黑龙江<span>22个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8067/">漠河县龙源生态农业科技有限公司</a></li>
+				<li><a href="http://182.92.173.223:8061/">黑龙江省逊克农场</a></li>
+                <li class="right"><a href="heilongjiang.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="mapTipText mapTipText1">
+		<div class="mapTipImg"><img src="images/jilin.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">吉林<span>9个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8066/">蛟河市黄松甸金丰食用菌专业合作社</a></li>
+				<li><a href="http://182.92.173.223:8067/">吉林市百园食用菌专业合作社</a></li>
+                <li class="right"><a href="jilin.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="mapTipText mapTipText2">
+		<div class="mapTipImg"><img src="images/liaoning.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">辽宁<span>5个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">好味特（大连）食品有限公司</a></li>
+				<li><a href="http://182.92.173.223:8064/">大连舜威商贸有限公司</a></li>
+                <li class="right"><a href="liaoning.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText3">
+		<div class="mapTipImg"><img src="images/chongqing.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">河北<span>40个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">涉县王金庄花椒专业合作社</a></li>
+			    <li><a href="http://182.92.173.223:8062/">国欣农村技术服务总会</a></li>
+                <li class="right"><a href="hebei.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText4">
+		<div class="mapTipImg"><img src="images/chongqing.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">山东<span>56个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">山东兴田肥业有限公司</a></li>
+			    <li><a href="http://182.92.173.223:8062/">山东吉胜生态农业专业合作社</a></li>
+                <li class="right"><a href="shandong.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText5">
+		<div class="mapTipImg"><img src="images/chongqing.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">江苏<span>14个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">江苏兴野食品有限公司</a></li>
+			    <li><a href="http://182.92.173.223:8062/">盱眙县养蜂人蜂业专业合作社</a></li>
+                <li class="right"><a href="jiangsu.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText6">
+		<div class="mapTipImg"><img src="images/chongqing.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">浙江<span>61个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">富阳东洲芦笋专业合作社</a></li>
+			    <li><a href="http://182.92.173.223:8062/">杭州优吉贸易有限公司</a></li>
+                <li class="right"><a href="zhejiang.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText7">
+		<div class="mapTipImg"><img src="images/chongqing.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">安徽<span>77个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">安徽省野寨绿色食品有限公司</a></li>
+			    <li><a href="http://182.92.173.223:8062/">潜山县传文原生态瓜蒌专业合作社</a></li>
+                <li class="right"><a href="anhui.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    
+    <div class="mapTipText mapTipText8">
+		<div class="mapTipImg"><img src="images/liaoning.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">河南<span>11个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">中牟县国富大蒜种植专业合作社</a></li>
+				<li><a href="http://182.92.173.223:8064/">河南省雪健实业有限公司</a></li>
+                <li class="right"><a href="henan.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText9">
+		<div class="mapTipImg"><img src="images/chongqing.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">山西<span>8个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">山西春阳生物科技有限公司</a></li>
+			    <li><a href="http://182.92.173.223:8062/">山西云中紫塞食品有限责任公司</a></li>
+                <li class="right"><a href="shanxi.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText10">
+		<div class="mapTipImg"><img src="images/chongqing.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">陕西<span>10个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">安康市汉水韵茶业有限公司</a></li>
+			    <li><a href="http://182.92.173.223:8062/">汉中市汉水茗园茶业有限公司</a></li>
+                <li class="right"><a href="shanxi2.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText11">
+		<div class="mapTipImg"><img src="images/chongqing.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">甘肃<span>10个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">甘肃佳农粮油开发有限公司</a></li>
+			    <li><a href="http://182.92.173.223:8062/">天水宇龙果品专业合作社</a></li>
+                <li class="right"><a href="gansu.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText12">
+		<div class="mapTipImg"><img src="images/chongqing.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">湖北<span>6个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">湖北恒贸茶油有限公司</a></li>
+			    <li><a href="http://182.92.173.223:8062/">阳新三元实业有限公司</a></li>
+                <li class="right"><a href="hubei.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText13">
+		<div class="mapTipImg"><img src="images/chongqing.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">江西<span>12个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">江西蓝晶有机农业开发有限公司</a></li>
+			    <li><a href="http://182.92.173.223:8062/">南昌佳优宝生态科技有限公司</a></li>
+                <li class="right"><a href="jiangxi.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText14">
+		<div class="mapTipImg"><img src="images/chongqing.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">福建<span>14个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">武平县梁野绿茶叶专业合作社</a></li>
+			    <li><a href="http://182.92.173.223:8062/">靖宇县阳光食用菌专业合作社</a></li>
+                <li class="right"><a href="fujian.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText15">
+		<div class="mapTipImg"><img src="images/chongqing.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">湖南<span>11个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">湖南瑞柏茶油有限公司</a></li>
+			    <li><a href="http://182.92.173.223:8062/">湖南裕丰米业有限责任公司</a></li>
+                <li class="right"><a href="hunan.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText16">
+		<div class="mapTipImg"><img src="images/chongqing.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">贵州<span>29个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">贵州地宝生物科技有限公司</a></li>
+			    <li><a href="http://182.92.173.223:8062/">贵州济生农业科技有限公司 </a></li>
+                <li class="right"><a href="guizhou.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText17">
+		<div class="mapTipImg"><img src="images/liaoning.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">四川<span>60个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">泸县海潮桂圆专业合作社</a></li>
+				<li><a href="http://182.92.173.223:8064/">罗江县绿宝石水果专业合作社</a></li>
+                <li class="right"><a href="sichuan.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText18">
+		<div class="mapTipImg"><img src="images/chongqing.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">云南<span>32个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">云南楚雄彝山工贸有限公司</a></li>
+			    <li><a href="http://182.92.173.223:8062/">云南春天农产品有限公司</a></li>
+                <li class="right"><a href="yunnan.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText20">
+		<div class="mapTipImg"><img src="images/liaoning.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">海南<span>19个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">海南裕昌龙实业有限公司</a></li>
+			    <li><a href="http://182.92.173.223:8062/">海南祥古头实业有限公司</a></li>
+                <li class="right"><a href="hainan.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText21">
+		<div class="mapTipImg"><img src="images/liaoning.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">上海<span>9个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">上海前卫柑桔公司</a></li>
+			    <li><a href="http://182.92.173.223:8062/">上海绿众果蔬种植专业合作社</a></li>
+                <li class="right"><a href="shanghai.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText22">
+		<div class="mapTipImg"><img src="images/chongqing.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">重庆<span>46个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8063/">秀山鼎元茶业有限公司</a></li>
+				<li><a href="http://182.92.173.223:8065/">重庆市红友王红心柚有限公司</a></li>
+                <li class="right"><a href="chongqing.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText23">
+		<div class="mapTipImg"><img src="images/liaoning.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">天津<span>1个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">天津市宁河原种猪场</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText24">
+		<div class="mapTipImg"><img src="images/chongqing.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">北京<span>22个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">北京乐土农业发展有限公司</a></li>
+				<li><a href="http://182.92.173.223:8064/">北京美佳兴业贸易有限公司</a></li>
+                <li class="right"><a href="beijing.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText25">
+		<div class="mapTipImg"><img src="images/liaoning.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">宁夏<span>1个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">宁夏兴唐米业集团有限公司</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText26">
+		<div class="mapTipImg"><img src="images/liaoning.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="neimenggu.html">内蒙古<span>7个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">达拉特旗沙之绿农业开发有限公司</a></li>
+			    <li><a href="http://182.92.173.223:8062/">宁城县藏龙谷旅游商贸有限公司</a></li>
+                <li class="right"><a href="neimenggu.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText27">
+		<div class="mapTipImg"><img src="images/liaoning.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">广西<span>11个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">广西武宣双髻龙茶业有限公司</a></li>
+			    <li><a href="http://182.92.173.223:8062/">广西凌云县正道茶业有限公司</a></li>
+                <li class="right"><a href="guangxi.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText28">
+		<div class="mapTipImg"><img src="images/liaoning.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">新疆<span>4个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8065/">新疆乌鲁木齐新赛油脂有限公司</a></li>
+			    <li><a href="http://182.92.173.223:8062/">新疆巴依牧业有限公司</a></li>
+                <li class="right"><a href="xinjiang.html" target="_black">查看更多...</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="mapTipText mapTipText29">
+		<div class="mapTipImg"><img src="images/jilin.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">西藏<span>1个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8064/">西藏工布江达县科技局</a></li>
+			</ul>
+		</div>
+	</div>
+     <div class="mapTipText mapTipText30">
+		<div class="mapTipImg"><img src="images/jilin.jpg" alt=""/></div>
+		<div class="mapTipList">
+			<h2><a href="">广东<span>1个农场基地</span></a></h2>
+			<ul>
+				<li><a href="http://182.92.173.223:8064/">广东紫金瑞丰农科实业有限公司</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+<div id="advLayer" style="position:absolute;left:100px;top:300px;width:300px;height:300px;z-index:1;">
+	<div class="row" style="padding-bottom:50px;"><button type="button" class="btn btn-success btn-lg" style="width:210px;" onclick="javascript:window.location.href='index.html';">认证中心认证客户</button></div>
+    <div class="row" style="padding-bottom:50px;"><button type="button" class="btn btn-success btn-lg" style="width:210px;">有机协会认证客户</button></div>
+    <div class="row"><button type="button" class="btn btn-success btn-lg"style="width:210px;">供销社种植类合作社</button></div>
+</div>
+</body>
+</html>

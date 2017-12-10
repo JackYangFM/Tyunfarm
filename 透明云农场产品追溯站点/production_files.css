@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+.file{height:50px;line-height:50px;width:1200px;background:#f9f9f9;border-left:7px solid #008fff;clear:both;margin:0 auto 40px;}
+.file a{font-size:16px;text-decoration:none;}
+.file .f_a1{font-weight:600;color:#008fff;padding-left:10px;}
+.file .f_a2{color:#666;}
+.fileimagebox{width:1200px; height:400px; margin:0 auto; position:relative; overflow:hidden;}
+.v_namebox{width:1200px; height:100px; background:rgba(0,0,0,0.6); position:absolute; bottom:0; left:0;}
+.v_namebox p{ float:left; font-size:24px; color:#fff; padding:34px 0 0 20px; display:block;}
+.f_linebox{ width:460px; height:62px; background:url(images/f_line.png) no-repeat;background-size:460px 62px;background-repeat:no-repeat;margin:20px 0 0 80px;float:left;}
+.v_name h1,.f_linebox h2{color:#fff;text-align:center;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.v_name{ width:150px; height:60px; float:left; position:relative;}
+.v_name h1{font-size:16px; padding:10px 0 10px 0;}
+.v_name h2{font-size:14px;} 
+.v_name ul{ padding:10px 0 0 10px; float:left;}
+.v_name ul img{ width:20px; height:20px; margin:0 0 6px 3px;}
+.v_name ul li{ color:white; font-size:12px;text-align:center;}
+.description{width:150px; height:62px; float:right; margin:14px 300px 0 0;}
+.description h5{color:white; font-size:14px; line-height:24px;}
+.compxq{ position:absolute; bottom:16px; right:30px;}
+.compxq a{color:white; font-size:16px;}
+.compxq a:hover{color:#00ff55;}
+
+.f_iconbox{width:896px; margin:80px auto;}
+.f_icon01,.f_icon02,.f_icon03,.f_icon04{ margin-right:128px;}
+.f_icon01 img,.f_icon02 img,.f_icon03 img,.f_icon04 img,.f_icon05 img{ width:70px; height:70px; vertical-align:middle; margin-bottom:10px; margin-left:2px;}
+.f_icon01 p,.f_icon02 p,.f_icon03 p,.f_icon04 p,.f_icon05 p{ color:#909090; font-size:16px;margin-left:-2px;}
+.f_icon01,.f_icon02,.f_icon03,.f_icon04{ float:left;}
+.f_icon01 img,.f_icon02 img,.f_icon03 img,.f_icon04 img,.f_icon05 img{ transition:all 0.4s;}
+.f_icon01 img:hover,.f_icon02 img:hover,.f_icon03 img:hover,.f_icon04 img:hover,.f_icon05 img:hover{transform: scale(1.2,1.2);}
+
+.popbox1{width:100%;}
+.tanchuang,.tanchuang th{ text-align:center;color:black;}
+.tanchuang td{ line-height:40px;}
+.tanchuang th{ line-height:50px;}

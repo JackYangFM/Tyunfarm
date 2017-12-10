@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+.cuimg{background:url(images/u_01.jpg) no-repeat center;height:350px;}
+
+.cubox{width:1200px; margin:80px auto 0 auto;}
+.leftbar_u{ width:240px; height:191px; float:left;}
+.leftbar_u1{ width:240px; height:40px; background-color:#00a81c; font-size:18px;color:white; font-weight:bold; text-align:center;line-height:40px;}
+.subnav img{width:240px; height:101px; margin-top:50px;}
+.subnav{ position:relative;}
+.subnav ul{ position:absolute; top:0px; width:240px;}
+.subnav ul li{font-size:18px;font-weight:bold; color:#4b4b4b; line-height:50px; padding-left:60px; cursor:pointer;}
+.subnav ul li{ background:url(images/u_03.png) no-repeat 180px 15px; }
+
+.current{color:#008015;}
+.currentdd{ background-color:transparent;}
+
+.rightbar_u{ width:880px; height:760px; margin:0 40px 100px 0; float:right; overflow:hidden;}
+.rightbar_u1{background:url(images/u_05.png) no-repeat; height:260px; }
+.rightbar_u11{width:850px; height:200px; padding:15px;}
+.rightbar_u11 p,.rightbar_u22 p,.rightbar_u33 p{ width:850px;font-size:15px;color:#666;line-height:35px;font-weight:600;}
+.rightbar_u11 p{text-indent:2em;}
+
+.rightbar_u2{background:url(images/u_05.png) no-repeat; height:260px; margin-top:20px; }
+.rightbar_u22{width:840px; height:260px; padding:20px;}
+.rightbar_u22 p{ line-height:40px;}
+
+.rightbar_u3{background:url(images/u_05.png) no-repeat; height:260px; margin-top:20px; }
+.rightbar_u33{padding:15px 0 0 20px; height:260px;}
+.rightbar_u33 p{ line-height:30px;font-weight:600;}

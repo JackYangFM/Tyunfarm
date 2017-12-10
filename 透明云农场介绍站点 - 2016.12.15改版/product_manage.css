@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+.timg{background:url(images/p_01.jpg) no-repeat center;height:350px;}
+.t_z{background:url(images/z_01.jpg) no-repeat center;height:350px;}
+.scglbox{width:1200px;margin:50px auto;}
+.scglbox h2{font-size:28px;text-align:center;display:block;}
+.scglbox ul li{width:360px;height:475px;margin:30px 20px;float:left;background:#f3f3f3;list-style:none;}
+.scglbox ul li img{display:block;margin:25px auto;}
+.scglbox ul li h2{text-align:center;font-size:18px;line-height:30px;font-weight:600;color:#00923f;}
+.scglbox ul li p{padding:15px 40px;line-height:25px;font-size:14px;font-weight:600;}
+
+.checkbox{width:100%;height:475px;background:#49c6ff;margin:0 0 100px;}
+.checkbox .c_box{width:1100px;margin:0 auto;}
+.checkbox .c_box img{float:left;margin:60px 0;width:388px;height:354px;margin-left:45px;}
+.checkbox .c_box .b_title{float:right;width:610px;}
+.checkbox .c_box .b_title h2{color:#fff;font-size:30px;font-weight:600;padding:120px 45px 20px;}
+.checkbox .c_box .b_title p{color:#fff;font-size:17px;line-height:33px;padding:0 45px;}
+
+.managebox{width:1000px;margin:0 auto;}
+.managebox ul li{height:475px;margin:0 0 30px 0;}
+.managebox ul li img{width:388px;height:354px;float:left;margin:60px 20px 0 0;}
+.managebox ul li .m_gl{float:left;margin:170px 0 0 200px;}
+.managebox ul li .m_jcx{margin:130px 110px 0 30px;width:450px;}
+.managebox ul li .m_gl h2{font-size:25px;color:#00923f;line-height:50px;}
+.managebox ul li .m_gl p{font-size:15px;font-weight:600;line-height:35px;}
+.managebox ul li .m_gl p span{color:#00923f;}
+
+
+/*.lastbox{width:1200px;margin:50px auto;}
+.lastbox ul li{width:550px;float:left;background:#e8e8e8;margin:0 25px;padding:25px 0;}
+.lastbox ul li img{float:left;}
+.lastbox ul li .l_gl{float:left;}
+.lastbox ul li .l_gl h2{font-size:25px;color:#00923f;line-height:50px;}
+.lastbox ul li .l_gl p{font-size:14px;font-weight:600;line-height:30px;}
+.lastbox ul li .l_gl p span{color:#00923f;font-size:14px;}*/
+
+
+
+
+
+
+
+
+
+
+
+
+		   

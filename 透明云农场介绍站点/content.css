@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+.timg{width:1400px; height:300px; margin:100px auto 0 auto; }
+.tmyncsm,.tmyncsmg{width:1200px; margin:0 auto; margin-top:80px; font-size:22px; color:#333; font-family:"微软雅黑";}
+.tmyncsmg{ margin-top:40px;}
+
+
+.tmyncsm_t,.tmyncsm_t1{width:1200px; margin:0 auto; font-size:16px; color:#666; font-family:"微软雅黑";
+           line-height:24px; text-indent:2em; letter-spacing:0.6px;}
+.tmyncsm_t{ margin-top:32px;}
+
+.xtjxmb{width:1200px; margin:0 auto 100px auto; overflow:hidden;} 
+.xtjxmb p{margin-top:60px; font-size:22px; color:#333; font-family:"微软雅黑";}
+.xtjxmbimg{ width:500px; height:522px; float:left; margin-left:50px; margin-top:40px;}
+.xtjxmbtext{ width:600px;font-size:16px; color:#666; font-family:"微软雅黑";line-height:24px; text-indent:2em; 
+             letter-spacing:0.4px; overflow:hidden; padding:160px 0 0 40px;}
+
+		   
+		   
